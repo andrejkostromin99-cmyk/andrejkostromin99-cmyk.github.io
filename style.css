@@ -17,7 +17,6 @@ body {
   padding: 0 20px;
 }
 
-/* ШАПКА */
 header {
   background: linear-gradient(135deg, #0b2a4a, #1b4f7a);
   color: white;
@@ -38,35 +37,51 @@ header .subtitle {
   margin-top: 8px;
 }
 
-/* Секции */
-.about {
+.about,
+.importance,
+.results,
+.screenshots {
   background: white;
   padding: 30px 35px;
   border-radius: 16px;
-  margin: 40px 0 30px;
+  margin: 30px 0;
   box-shadow: 0 8px 20px rgba(0,0,0,0.06);
 }
 
-.about h2 {
+h2 {
   font-size: 1.8rem;
   color: #0b2a4a;
-  margin-bottom: 12px;
-}
-
-.about p {
-  font-size: 1.1rem;
-  margin-bottom: 8px;
-}
-
-.materials h2 {
-  font-size: 2rem;
-  color: #0b2a4a;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   border-left: 6px solid #1b4f7a;
   padding-left: 18px;
 }
 
-/* КАРТОЧКИ */
+.about p,
+.importance p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.importance ul,
+.results ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.importance ul li,
+.results ul li {
+  background: #e9f0f7;
+  margin: 6px 0;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.materials h2 {
+  margin-bottom: 25px;
+}
+
 .card {
   background: white;
   padding: 22px 28px;
@@ -119,7 +134,19 @@ header .subtitle {
   transform: scale(1.03);
 }
 
-/* ПОДВАЛ */
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.screenshot-img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 1px solid #e0e0e0;
+}
+
 footer {
   background: #0b2a4a;
   color: #cbd5e1;
