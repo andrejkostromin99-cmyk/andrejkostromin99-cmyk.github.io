@@ -143,17 +143,7 @@ h2 {
   transform: scale(1.03);
 }
 
-/* ===== QR-код ===== */
-.qrcode {
-  text-align: center;
-}
 
-.qr-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
 
 /* ===== КНОПКА "НАВЕРХ" ===== */
 #backToTop {
