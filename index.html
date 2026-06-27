@@ -4,13 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Цифровая грамотность — Костромин А.В.</title>
-
-  <!-- Подключаем CSS -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <!-- ШАПКА -->
   <header>
     <div class="container">
       <h1>Цифровая грамотность</h1>
@@ -19,7 +17,6 @@
     </div>
   </header>
 
-  <!-- ОСНОВНОЙ БЛОК -->
   <main class="container">
 
     <!-- О проекте -->
@@ -67,27 +64,22 @@
       <div class="card">
         <h3>📄 Сценарий индивидуальной консультации</h3>
         <p>15–20 минут. 5 правил безопасности, разбор угроз, примеры.</p>
-        <a href="1 задание.docx" class="btn" download>Скачать</a>
+        <a href="Сценарий_индивидуальной_консультации.docx" class="btn" download>Скачать</a>
       </div>
 
       <div class="card">
         <h3>📄 Сценарий «Цифровой ликбез»</h3>
         <p>35–40 минут. Групповое мероприятие с интерактивом.</p>
-        <a href="6 задание.docx" class="btn" download>Скачать</a>
+        <a href="Сценарий_Цифровой_ликбез.docx" class="btn" download>Скачать</a>
       </div>
 
       <div class="card">
         <h3>📊 Презентация</h3>
         <p>10 слайдов. Правила, угрозы, инструкции, примеры.</p>
-        <a href="Презентация.pptx" class="btn" download>Скачать</a>
+        <a href="Презентация_Безопасность_мессенджеров.pptx" class="btn" download>Скачать</a>
       </div>
     </section>
-<div class="card">
-        <h3>надо</h3>
-        <p>надо</p>
-        <a href="1слайд.docx" class="btn" download>Скачать</a>
-      </div>
-    </section>
+
     <!-- Результаты -->
     <section class="results">
       <h2>Результаты</h2>
@@ -104,7 +96,9 @@
     <section class="gallery-section">
       <h2>Фото с консультаций</h2>
       <div class="gallery">
-        <img src="консультация1.jpg" alt="Консультация 1" class="gallery-img">
+        <img src="consultation1.jpg" alt="Консультация 1" class="gallery-img">
+        <img src="consultation2.jpg" alt="Консультация 2" class="gallery-img">
+        <img src="consultation3.jpg" alt="Консультация 3" class="gallery-img">
       </div>
       <p class="gallery-note">Фотографии с индивидуальных консультаций</p>
     </section>
@@ -113,16 +107,14 @@
     <section class="gallery-section">
       <h2>Фото с вебинара</h2>
       <div class="gallery">
-        <img src="1.jpg" alt="Вебинар 1" class="gallery-img">
-        <img src="2.jpg" alt="Вебинар 2" class="gallery-img">
-        <img src="3.jpg" alt="Вебинар 3" class="gallery-img">
-        <img src="4.jpg" alt="Вебинар 3" class="gallery-img">
-
+        <img src="webinar1.jpg" alt="Вебинар 1" class="gallery-img">
+        <img src="webinar2.jpg" alt="Вебинар 2" class="gallery-img">
+        <img src="webinar3.jpg" alt="Вебинар 3" class="gallery-img">
       </div>
       <p class="gallery-note">Скриншоты с онлайн-трансляции вебинара</p>
     </section>
 
-    <!-- ВИДЕОУРОК (плеер без YouTube) -->
+    <!-- ВИДЕОУРОК (с Google Диска) -->
     <section class="video-section">
       <h2>Видеоурок по теме</h2>
       <p class="video-desc">
@@ -131,18 +123,17 @@
       </p>
       <div class="video-wrapper">
         <video controls>
-          <source src="video_lecture.mp4" type="video/mp4">
+          <source src="https://drive.google.com/uc?export=download&id=1Fg2-Yssy8EoSzEsnEFDGUkZIU1dWgdu9" type="video/mp4">
           Ваш браузер не поддерживает воспроизведение видео.
         </video>
       </div>
       <p class="video-note">
-        Видео можно скачать: <a href="video_lecture.mp4" download>Скачать видео</a>
+        📥 <a href="https://drive.google.com/uc?export=download&id=1Fg2-Yssy8EoSzEsnEFDGUkZIU1dWgdu9" download>Скачать видео</a>
       </p>
     </section>
 
   </main>
 
-  <!-- ПОДВАЛ -->
   <footer>
     <div class="container">
       <p>© 2026 — Слободской колледж педагогики и социальных отношений</p>
@@ -150,7 +141,6 @@
     </div>
   </footer>
 
-  <!-- КНОПКА "НАВЕРХ" -->
   <button id="backToTop" title="Наверх">↑</button>
 
   <script>
@@ -162,7 +152,6 @@
         btn.style.display = "none";
       }
     };
-
     document.getElementById("backToTop").onclick = function() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
